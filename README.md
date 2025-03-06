@@ -1,37 +1,75 @@
-# csc217-210-LR3-2
+PackScheduler
 
-## Lab 10
+A Course Scheduling System for Efficient Academic Planning
 
-- **Finish Implementing LinkedList** | **Owner: Cameron Edwards** , **Due: 11/15/2024** , **Status:** Completed
+Overview
 
-- **Implement and Test Faculty** | **Owner: Dreese Abdelilah** , **Due: 11/16/2024** , **Status:** Completed
+PackScheduler is a course scheduling system designed to help students efficiently manage their academic schedules. Developed as part of coursework at NC State University, this system ensures conflict-free scheduling, credit validation, and persistent storage for course records.
 
-- **Implement and Test FacultyRecordIO** | **Owner: Dreese Abdelilah** , **Due: 11/16/2024** , **Status:** Completed
+It enforces strict course scheduling rules, allowing students to only register for courses that fit within their credit limits and available time slots.
 
-- **Fix CourseRoll Waitlist Tests** | **Owner: Dreese Abdelilah** , **Due: 11/16/2024** , **Status:** Completed
+Features
 
-- **Implement and Test FacultyDirectory** | **Owner: Matt Stanaland** , **Due: 11/16/2024** , **Status:** Completed
+✅ Course Registration & Management – Add, remove, and modify course selections
+✅ Schedule Conflict Detection – Prevents time slot overlaps
+✅ Student & Faculty Management – Organize and track user schedules
+✅ Data Persistence – Save and load schedules via CSV file storage
+✅ Validation Rules – Ensure valid meeting times, course credit limits, and unique course sections
+✅ JUnit Testing – Fully unit-tested for reliability
 
-- **Update RegistrationManager** | **Owner: Cameron Edwards** , **Due: 11/17/2024** , **Status:** Completed
+Technologies Used
+	•	Java – Core programming language
+	•	JUnit – Unit testing framework
+	•	Git – Version control
+	•	Eclipse – IDE used for development
+	•	CSV File Parsing – Reads and writes schedules to files
+	•	Maven (if applicable) – For dependency management
 
-- **System Testing** | **Owner: Cameron Edwards** , **Due: 11/17/2024** , **Status:** Completed
+Installation & Setup
 
-  
-## Lab 9
+Prerequisites
 
-- **Finish Implementing LinkedStack** | **Owner: Cameron Edwards** , **Due: 11/06/2024** , **Status:** Completed
+Ensure you have:
+	•	Java (JDK 11 or later)
+	•	Eclipse or IntelliJ (or any preferred Java IDE)
+	•	Git (if cloning the repository)
 
-- **Implement ArrayQueue and ArrayQueueTest** | **Owner: Dreese Abdelilah** , **Due: 11/08/2024** , **Status:** Completed
+Cloning the Repository
 
-- **Implement LinkedQueue and LinkedQueueTest** | **Owner: Matt Stanaland** , **Due: 11/08/2024** , **Status** Completed
+To download and set up the project locally:
 
-- **Fill out Runtime Efficiency Form** | **Owner: Cameron Edwards** , **Due: 11/08/2024** , **Status** Completed
+git clone https://github.com/matthewstanaland/PackScheduler.git
+cd PackScheduler
 
-- **Optimize LinkedAbstractList** | **Owner: Cameron Edwards** , **Due: 11/09/2024** , **Status** Completed
+Running the Application
+	1.	Open the project in Eclipse or another Java IDE.
+	2.	Ensure all dependencies are set up.
+	3.	Run Main.java to start the scheduler.
 
-- **Implement Waitlist Functionality** | **Owner: Dreese Abdelilah** , **Due: 11/09/2024** , **Status** Completed
+Usage
+	•	Students can:
+	•	View available courses
+	•	Register for courses within credit limits
+	•	Export schedules as CSV files
+	•	Administrators can:
+	•	Add, update, or remove courses
+	•	Manage student and faculty records
 
-- **Test Waitlist Functionality** | **Owner: Matt Stanaland** , **Due: 11/09/2024** , **Status** Completed
+Testing
 
-- **Fill out STP** | **Owner: Cameron Edwards** , **Due: 11/10/2024** , **Status** Completed
-  
+This project includes unit tests to ensure functionality:
+
+mvn test
+
+or
+Run tests in JUnit through your IDE.
+
+Future Enhancements
+
+🔹 Integrate a GUI for better user experience
+🔹 Add database support for persistent storage beyond CSV files
+🔹 Automated schedule optimization to suggest the best possible schedules
+
+License
+
+This project is licensed under the MIT License.
